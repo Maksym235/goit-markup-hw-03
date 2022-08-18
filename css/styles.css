@@ -13,15 +13,38 @@
   --secondary-background-color: #f5f4fa;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
 .link {
   text-decoration: none;
 }
 
 .list {
   list-style: none;
-}
-img {
-  display: block;
 }
 
 .visually-hidden {
@@ -36,8 +59,9 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-
+/* ========================= */
 body {
+  width: 1600px;
   font-family: 'Roboto', sans-serif;
   font-size: var(--primary-font-size);
   letter-spacing: 0.03em;
@@ -45,7 +69,35 @@ body {
   background-color: var(--other-color);
 }
 
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.header-conteiner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =================HEADER============== */
+
+.page-header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+}
+
 .logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--logo-color);
   font-family: 'Raleway';
   font-style: normal;
@@ -57,6 +109,14 @@ body {
 
 .logo-web {
   color: var(--accent-color);
+}
+
+.menu-list {
+  display: flex;
+  column-gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .menu-list .link {
@@ -77,12 +137,17 @@ body {
 }
 
 .contacts-list {
+  display: flex;
+  column-gap: 50px;
+  padding-left: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14em;
   letter-spacing: 0.02em;
 }
 
-.header-contacts-email,
+.contacts-list .header-contacts-email,
 .header-contacts-number {
   color: var(--secondary-color);
   font-weight: 500;
@@ -98,21 +163,35 @@ body {
   color: var(--accent-color);
 }
 
+/* ==============HEADER============= */
+
+/* =============MAIN================ */
+/* ==============BANER=============== */
 .baner {
   background-color: var(--primary-background-color);
   color: var(--other-color);
 }
 
+.page-baner {
+  padding-bottom: 200px;
+  flex-wrap: wrap;
+}
+
 .baner-text {
+  padding-top: 200px;
+  padding-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .baner-modal-button {
+  padding: 10px 32px;
   font-family: var(--main-font);
   background-color: var(--accent-color);
   color: var(--other-color);
@@ -120,6 +199,8 @@ body {
   font-weight: var(--primry-font-weight);
   font-size: 16px;
   line-height: 1.875em;
+  border: 0;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -130,6 +211,14 @@ body {
 .baner-modal-button:focus {
   background-color: #188ce8;
   color: var(--other-color);
+}
+/* ===========BANER============= */
+
+/* ===========BENEFITS============= */
+
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .benefits-caption {
@@ -143,6 +232,7 @@ body {
 .benefits-list {
   font-weight: var(--primry-font-weight);
   line-height: 1.14em;
+  column-gap: 30px;
 }
 
 .benefits-subtitle {
@@ -158,22 +248,46 @@ body {
   line-height: 1.7em;
 }
 
+/* ==========BENEFITS============== */
+
+/* ===========ABOUT================ */
+
+.about-us {
+  padding-bottom: 94px;
+}
+
 .about-caption {
+  margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
   font-size: 36px;
   line-height: 1.16em;
   text-align: center;
 }
 
+.about-list {
+  column-gap: 30px;
+}
+
+/* ============ABOUT============= */
+
+/* ============OUR TEAM============ */
+
 .our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-background-color);
 }
 
 .our-team-caption {
+  padding-bottom: 50px;
   font-weight: var(--primry-font-weight);
   font-size: 36px;
   line-height: 1.16em;
   text-align: center;
+}
+
+.workers-list {
+  column-gap: 30px;
 }
 
 .workers-item {
@@ -195,11 +309,20 @@ body {
   text-align: center;
 }
 
+/* ============OUR TEAM============== */
+
+/* =============FOOTER================ */
+
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .logo-footer {
+  justify-content: flex-start;
   color: var(--other-color);
   font-family: var(--secondary-font-family);
   font-weight: var(--primry-font-weight);
@@ -207,7 +330,13 @@ body {
   line-height: 1.19;
 }
 
+.address {
+  justify-content: flex-start;
+}
+
 .address-list {
+  flex-direction: column;
+  justify-content: flex-start;
   font-style: normal;
   font-weight: var(--secondary-font-weight);
   line-height: 1.7;
@@ -236,7 +365,23 @@ body {
   color: var(--accent-color);
 }
 
+/* ===========FOOTER=========== */
+
+/* ============PORFOLIO========
+===============SERVICES======== */
+
+.services {
+  padding-bottom: 94px;
+}
+
+.button-conteiner {
+  align-items: center;
+  align-content: center;
+}
+
 .services-nav-list {
+  align-items: center;
+  column-gap: 8px;
   color: var(--main-color);
   font-weight: 500;
   font-size: 16px;
@@ -244,6 +389,11 @@ body {
 }
 
 .services-nav-button {
+  border: 0;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-top: 94px;
+  margin-bottom: 50px;
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
@@ -254,8 +404,14 @@ body {
 
 .services-nav-button:hover,
 .services-nav-button:focus {
+  padding: 6px 25px;
   background-color: var(--accent-color);
   color: var(--other-color);
+}
+
+.services-list {
+  flex-wrap: wrap;
+  column-gap: 30px;
 }
 
 .services-title {
@@ -272,3 +428,5 @@ body {
   font-size: 16px;
   line-height: 1.875;
 }
+
+/* ==========SERVICES========== */

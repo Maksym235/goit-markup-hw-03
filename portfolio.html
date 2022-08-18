@@ -8,35 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="page-navigatoin">
+ <header class="page-header">
+      <div class="header-conteiner conteiner">   
+           <nav class="page-navigation">
         <a class="logo link" href="./index.html"><span class="logo-web">Web</span>Studio</a>
         <ul class="menu-list list">
           <li class="menu-item"><a class="menu-link link" href="./index.html">Студія</a></li>
-          <li class="menu-item"><a class="menu-link link current" href="/portfolio.html  ">Портфоліо</a></li>
+          <li class="menu-item"><a class="menu-link link current" href="./portfolio.html">Портфоліо</a></li>
           <li class="menu-item"><a class="menu-link link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contacts list">
+      <ul class="contacts-list list">
         <li class="contacts-item"><a class="header-contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
         <li class="contacts-item"><a class="header-contacts-number link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-    </header>
+    </div>
+  </header>
     <main class="main">
       <section class="services">
         <h1 class="services-heading visually-hidden">Наші послуги</h1>
-        <ul class="services-nav-list list">
+        <div class="buttom-conteiner conteiner">
+        <ul class="services-nav-list list conteiner">
           <li class="services-nav-item"><button type="button" class="services-nav-button">Усі</button></li>
           <li class="services-nav-item"><button type="button" class="services-nav-button">Веб-сайти</button></li>
           <li class="services-nav-item"><button type="button" class="services-nav-button">Додатки</button></li>
           <li class="services-nav-item"><button type="button" class="services-nav-button">Дизайн</button></li>
           <li class="services-nav-item"><button type="button" class="services-nav-button">Маркетинг</button></li>
         </ul>
+        </div>
 
-        <ul class="services-list list">
+        <ul class="services-list list conteiner">
           <li class="services-item">
             <img class="services-img"
               src="./portfolio-img/laptop.jpg"
@@ -113,20 +118,20 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <a class="logo-footer link" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+   <footer class="footer">
+      <a class="logo-footer link conteiner" href="./index.html"><span class="logo-web">Web</span>Studio</a>
       <address class="address">
-        <ul class="address-list list">
-          <li class="address-item">
+        <ul class="address-list list conteiner">
+          <li class="address-list-item">
             <a class="address-map link"
               href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
               target="_blank"
               rel="noopener noreferrer nofollow"
-              >м. Київ, пр-т Лесі Українки, 26"></a
+              >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li class="address-item"><a class="footer-contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="address-item"><a class="footer-contacts-number link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="address-list-item"><a class="footer-contacts-email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="address-list-item"><a class="footer-contacts-number link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>
