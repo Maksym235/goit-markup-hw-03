@@ -37,6 +37,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -62,6 +64,7 @@ img {
 /* ========================= */
 body {
   width: 1600px;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: var(--primary-font-size);
   letter-spacing: 0.03em;
@@ -78,6 +81,11 @@ body {
   align-content: center;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .header-conteiner {
   justify-content: space-between;
   align-items: center;
@@ -88,6 +96,7 @@ body {
 .page-header {
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .page-navigation {
@@ -216,11 +225,6 @@ body {
 
 /* ===========BENEFITS============= */
 
-.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .benefits-caption {
   font-style: normal;
   font-weight: var(--primry-font-weight);
@@ -252,10 +256,6 @@ body {
 
 /* ===========ABOUT================ */
 
-.about-us {
-  padding-bottom: 94px;
-}
-
 .about-caption {
   margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
@@ -273,8 +273,6 @@ body {
 /* ============OUR TEAM============ */
 
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--secondary-background-color);
 }
 
@@ -371,7 +369,7 @@ body {
 ===============SERVICES======== */
 
 .services {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .button-conteiner {
@@ -380,6 +378,8 @@ body {
 }
 
 .services-nav-list {
+  padding-bottom: 50px;
+  padding-top: 94px;
   align-items: center;
   column-gap: 8px;
   color: var(--main-color);
@@ -392,8 +392,6 @@ body {
   border: 0;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-top: 94px;
-  margin-bottom: 50px;
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
@@ -412,6 +410,14 @@ body {
 .services-list {
   flex-wrap: wrap;
   column-gap: 30px;
+  gap: 30px;
+}
+
+.desc {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .services-title {
