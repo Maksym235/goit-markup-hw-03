@@ -322,6 +322,7 @@ body {
 }
 
 .logo-footer {
+  padding-bottom: 20px;
   justify-content: flex-start;
   color: var(--other-color);
   font-family: var(--secondary-font-family);
