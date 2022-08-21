@@ -76,6 +76,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
@@ -260,6 +261,10 @@ body {
 
 /* ===========ABOUT================ */
 
+.about-us {
+  padding-top: 0;
+}
+
 .about-caption {
   margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
@@ -270,6 +275,8 @@ body {
 
 .about-list {
   column-gap: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 /* ============ABOUT============= */
@@ -281,7 +288,7 @@ body {
 }
 
 .our-team-caption {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: var(--primry-font-weight);
   font-size: 36px;
   line-height: 1.16em;
@@ -290,13 +297,20 @@ body {
 
 .workers-list {
   column-gap: 30px;
+  display: flex;
 }
 
 .workers-item {
   background-color: var(--other-color);
+  width: 270px;
+}
+
+.team-subtitle {
+  padding: 30px 70px;
 }
 
 .workers-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -323,8 +337,16 @@ body {
   justify-content: flex-start;
 }
 
+.footer-content {
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
 .logo-footer {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   justify-content: flex-start;
   color: var(--other-color);
   font-family: var(--secondary-font-family);
@@ -338,11 +360,16 @@ body {
 }
 
 .address-list {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   font-style: normal;
   font-weight: var(--secondary-font-weight);
   line-height: 1.7;
+}
+
+.address-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-map {
@@ -383,6 +410,7 @@ body {
 }
 
 .services-nav-list {
+  display: flex;
   padding-bottom: 50px;
   padding-top: 94px;
   align-items: center;
@@ -421,6 +449,7 @@ body {
 .desc {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: 0;
   justify-content: flex-start;
   align-items: center;
 }
