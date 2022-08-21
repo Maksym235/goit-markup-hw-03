@@ -26,9 +26,8 @@ p {
 
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -63,8 +62,6 @@ img {
 }
 /* ========================= */
 body {
-  width: 1600px;
-  justify-content: center;
   font-family: 'Roboto', sans-serif;
   font-size: var(--primary-font-size);
   letter-spacing: 0.03em;
@@ -89,14 +86,12 @@ body {
 }
 
 .header-conteiner {
-  justify-content: space-between;
   align-items: center;
 }
 
 /* =================HEADER============== */
 
 .page-header {
-  justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
@@ -125,12 +120,13 @@ body {
 .menu-list {
   display: flex;
   column-gap: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  align-items: center;
   padding-left: 0;
 }
 
 .menu-list .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--main-color);
   font-weight: 500;
   font-size: 14px;
@@ -148,6 +144,7 @@ body {
 }
 
 .contacts-list {
+  margin-left: auto;
   display: flex;
   column-gap: 50px;
   padding-left: 0;
@@ -179,26 +176,29 @@ body {
 /* =============MAIN================ */
 /* ==============BANER=============== */
 .baner {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--primary-background-color);
   color: var(--other-color);
 }
 
 .page-baner {
-  padding-bottom: 200px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .baner-text {
-  padding-top: 200px;
-  padding-bottom: 30px;
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  align-items: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .baner-modal-button {
@@ -212,9 +212,6 @@ body {
   line-height: 1.875em;
   border: 0;
   border-radius: 4px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -236,9 +233,14 @@ body {
 }
 
 .benefits-list {
+  display: flex;
   font-weight: var(--primry-font-weight);
   line-height: 1.14em;
   column-gap: 30px;
+}
+
+.benefits-list-item {
+  width: 270px;
 }
 
 .benefits-subtitle {
